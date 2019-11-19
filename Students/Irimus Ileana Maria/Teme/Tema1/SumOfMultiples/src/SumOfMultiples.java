@@ -1,11 +1,6 @@
-package tema1;
-
 import java.util.Scanner;
 
-//int sumaMultiplii = > overflow pt numarDat >= 10^5
-//long sumaMultiplii => overflow pt numarDat >= 10^10
-
-public class Assignment1_1_Sum_of_multiples {
+public class SumOfMultiples {
 
 	public static void main(String[] args) {
 
@@ -27,5 +22,4 @@ public class Assignment1_1_Sum_of_multiples {
 		else
 			System.out.println("Suma multiplilor de 3 sau 5 este " + sumaMultiplii);
 	}
-
 }
