@@ -16,9 +16,8 @@ public class Controller {
 
 		Arrays.sort(persoane);
 
-		for (int i = 0; i < 6; i++) {
-			System.out.println(
-					persoane[i].getNume() + " " + persoane[i].getPrenume() + ", " + persoane[i].getVarsta() + " ani.");
+		for (int i = 0; i < persoane.length; i++) {
+			System.out.println(persoane[i].toString());
 		}
 	}
 }

@@ -1,4 +1,5 @@
 
+
 public class Persoana implements Comparable<Persoana> {
 
 	private String nume;
@@ -11,19 +12,17 @@ public class Persoana implements Comparable<Persoana> {
 		this.varsta = varsta;
 	}
 
-	public String getNume() {
-		return this.nume;
-	}
-
-	public String getPrenume() {
-		return this.prenume;
-	}
-
-	public int getVarsta() {
-		return this.varsta;
-	}
-
 	public int compareTo(Persoana p) {
-		return nume.compareTo(p.nume);
+
+		if (varsta > p.varsta)
+			return 1;
+		else if (varsta < p.varsta)
+			return -1;
+		else
+			return 0;
+	}
+	
+	public String toString() {
+		return nume + " " + prenume + ", in varsta de " + varsta + " ani";
 	}
 }
